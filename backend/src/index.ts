@@ -1,5 +1,5 @@
 import "./config/container";
-import express, {Express} from "express";
+import express, { Express } from "express";
 import routes from "./routes/routes";
 import Util from "./utils/util";
 import cors from "cors";
@@ -14,4 +14,5 @@ const PORT: number = 3060;
 app.use(express.json());
 app.use("/api", routes);
 
-Util.startServer(app,PORT);
+Util.startServer(app, PORT);
+
